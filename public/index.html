@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hello world</title>
+   </head>
+   <style>
+       #container {
+        width: 700px;
+        height:500px;
+        margin: 0 auto;
+        background-color:gray;
+        text-align:center;
+      }
+      .cont{
+        width: 700px;
+        height:500px;
+        margin: 0 auto;
+        background-color:gray;
+      }
+   </style>
+   <body>
+    <div id="container">
+        <h1>
+          Socket Chat app using Node.js
+        </h1>
+      <div id = "error-container"></div>
+      <input id = "name" type = "text" name = "name" value = "" 
+         placeholder = "Enter your name!">
+      <input type = "submit" value = "enter" onClick="setUsername()"/>
+    </div>
+	    <script src="socket.io/socket.io.js"></script>
+        <script src="script.js"></script>
+   </body>
+</html>
